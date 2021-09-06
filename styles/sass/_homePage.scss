@@ -1,5 +1,6 @@
 $primary-color: #FF8327;
 $secondary-color: #BF2603;
+$dark-red: #220303;
 $black-color: #111010;
 $font-color: #ffffff;
 $baseFont: "Tulpen One", sans-serif;
@@ -63,7 +64,7 @@ $secondary-font: "Chathura", sans-serif;
     top: 8rem;
 }
 
-/**** about section styling starts ****/
+/*** about section styling starts ***/
 
 .about-section {
     background-color: $black-color;
@@ -73,10 +74,54 @@ $secondary-font: "Chathura", sans-serif;
             text-decoration: none;
             color: $font-color;
         }
+        i {
+            border: $secondary-color;
+
+        }
 }
 
-.new-space-and-community-container,
-.blog-and-get-in-touch-container i {
-    
+/*** More-info section ***/
+
+.more-info {
+    background-color: $dark-red;
+    color: $font-color;
+    display: flex;
+    flex-direction: row;
 }
+
+.plan-ahead {
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-ahead-img img {
+    width: 35%;
+    box-shadow: 1.5rem 1.5rem $primary-color;
+    position: relative;
+}
+
+h4 {
+    font-family: $secondary-font;
+    letter-spacing: 3px;
+}
+
+.button {
+    color: $font-color;
+
+}
+
+
+
+/*** party section ***/
+
+.host-party {
+    background-color: $black-color;
+    display: flex;
+    flex-direction: column;
+    color: $font-color;
+}
+
+
+
+
 
