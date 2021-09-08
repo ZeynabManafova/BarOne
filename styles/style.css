@@ -367,10 +367,10 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .new-space-and-community-container i,
 .blog-and-get-in-touch-container i {
@@ -379,6 +379,10 @@ p {
   padding: 0.5rem;
   border-radius: 55%;
   width: 37px;
+}
+
+.icon-space {
+  margin: 15px;
 }
 
 /*** More-info section ***/
