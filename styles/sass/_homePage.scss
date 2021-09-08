@@ -4,15 +4,34 @@ $dark-red: #220303;
 $black-color: #111010;
 $font-color: #ffffff;
 $baseFont: "Tulpen One", sans-serif;
-$secondary-font: "Chathura", sans-serif;
+$secondary-font: 'Chathura', sans-serif;
 
+/*** General Styling ***/
+body{
+    margin: 0;
+}
 
+h4 {
+    font-family: $secondary-font;
+    letter-spacing: 3px;
+}
+
+.button {
+    color: $font-color;
+}
+
+p {
+    font-family: $secondary-font;
+}
+
+/*** Wrapper/Header ***/
 .wrapper {
     background-image: url(../assets/images/home-image-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin-top: -16px;
+    // margin-top: -16px;
+    // height: 100vh;
 }
 
 .header-nav {
@@ -25,6 +44,7 @@ $secondary-font: "Chathura", sans-serif;
             align-items: center;
             font-weight: initial;
             height: 15%;
+            margin: 0;
                 .main-logo {
                     font-family: $baseFont;
                     color: $font-color;
@@ -35,25 +55,38 @@ $secondary-font: "Chathura", sans-serif;
     }
 }
 
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 10%;
+}
 
 .welcome {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: absolute;
+    text-align: left;
+    z-index: 1;
+
         h1 {
             color: $primary-color;
-            font-size: 261.4px;
             font-family: $baseFont;
-            text-align: left;
-            font-weight: initial;
+            font-size: 261.4px;
+            font-weight: 400;
             letter-spacing: 2.4px;
-
         }
-            span{
+
+            span {
                 display: block;
                 color: $font-color;
+                padding: 3rem 0.4rem;
                 font-family: $secondary-font;
+                font-size: 83.2px;
+                // font-weight: 700;
+                letter-spacing: 2.6px;
+                line-height: 94.7px;
             }
+        
 }
 
 .welcome-img {
@@ -65,7 +98,6 @@ $secondary-font: "Chathura", sans-serif;
 }
 
 /*** about section styling starts ***/
-
 .about-section {
     background-color: $black-color;
     color: $font-color;
@@ -74,54 +106,158 @@ $secondary-font: "Chathura", sans-serif;
             text-decoration: none;
             color: $font-color;
         }
-        i {
-            border: $secondary-color;
+}
 
-        }
+.new-space-and-community-container,
+.blog-and-get-in-touch-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8%;
+        
+    .new-space, 
+    .community {
+        display: flex;
+        flex-direction: column;
+    }
+
+    i {
+        color: $font-color;
+        background-color: $secondary-color;
+        padding: 0.5rem;
+        border-radius: 55%;
+        width: 37px;
+    }
 }
 
 /*** More-info section ***/
-
 .more-info {
     background-color: $dark-red;
     color: $font-color;
     display: flex;
+    flex-direction: column;
+    padding: 100px 0;   
+        
+        p {
+            margin: 0;
+            padding: 1rem 0 2rem 0;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 1.9px;
+        }
+
+        .button {
+            background-color: $secondary-color;
+            font-family: $baseFont;
+            width: 30%;
+            margin: 0;
+            border: none;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 3.2rem;
+            text-align: center;
+            letter-spacing: 0.01rem;
+
+            &::after {
+                background-color: $font-color;
+            }
+        }
+}
+
+// Plan Ahead
+.plan-ahead-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    align-self: center;
+    width: 50%;
+            h4 {
+                margin: 0;
+            }
+}
+
+// added flex to the container 
+.plan-ahead-container{
+    display: flex;
     flex-direction: row;
 }
 
-.plan-ahead {
+.plan-ahead-img {
+    width: 50%;
+
+    img {
+        position: relative;
+        top: -8.5rem;
+        box-shadow: 1.2rem 1.2rem $primary-color;
+    }
+}
+
+// New Locations
+.new-locations-text {
     display: flex;
     flex-direction: column;
+    padding: 0 50px;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    align-self: center;
+    width: 50%;
+
+    h4 {
+        margin: 0;
+    }
+} 
+
+// added flex to the container 
+.new-locations-container{
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-.plan-ahead-img img {
-    width: 35%;
-    box-shadow: 1.5rem 1.5rem $primary-color;
-    position: relative;
+.new-locations-img {
+    width: 50%;
+
+    img {
+        position: relative;
+        top: 8rem;            /*** Commented out as it was causing issues with styling ***/
+        box-shadow: -1.5rem 1.5rem $primary-color;
+    }
 }
-
-h4 {
-    font-family: $secondary-font;
-    letter-spacing: 3px;
-}
-
-.button {
-    color: $font-color;
-
-}
-
-
 
 /*** party section ***/
-
 .host-party {
     background-color: $black-color;
     display: flex;
     flex-direction: column;
+    align-items: center;
     color: $font-color;
+        h3 {
+            color: $primary-color;
+        }
+}
+
+.host-party-img img {
+    max-width: 100%;
+}
+
+/*** aside styling ***/
+aside {
+    background-color: $dark-red;
+
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 8% 5%;
+    }
+
+    ul li {
+        margin: 1rem;
+    }
 }
 
 
-
-
-
+/*** footer ***/
+footer {
+    background-color: grey;
+}

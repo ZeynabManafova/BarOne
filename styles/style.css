@@ -235,12 +235,30 @@ html {
   overflow: hidden;
 }
 
+/*** General Styling ***/
+body {
+  margin: 0;
+}
+
+h4 {
+  font-family: "Chathura", sans-serif;
+  letter-spacing: 3px;
+}
+
+.button {
+  color: #ffffff;
+}
+
+p {
+  font-family: "Chathura", sans-serif;
+}
+
+/*** Wrapper/Header ***/
 .wrapper {
   background-image: url(../assets/images/home-image-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: -16px;
 }
 
 .header-nav {
@@ -260,6 +278,7 @@ html {
           align-items: center;
   font-weight: initial;
   height: 15%;
+  margin: 0;
 }
 .header-nav .nav-container .main-logo {
   font-family: "Tulpen One", sans-serif;
@@ -269,30 +288,40 @@ html {
   font-weight: initial;
 }
 
-.welcome {
+.title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding-top: 10%;
+}
+
+.welcome {
+  position: absolute;
+  text-align: left;
+  z-index: 1;
 }
 .welcome h1 {
   color: #FF8327;
-  font-size: 261.4px;
   font-family: "Tulpen One", sans-serif;
-  text-align: left;
-  font-weight: initial;
+  font-size: 261.4px;
+  font-weight: 400;
   letter-spacing: 2.4px;
 }
 .welcome span {
   display: block;
   color: #ffffff;
+  padding: 3rem 0.4rem;
   font-family: "Chathura", sans-serif;
+  font-size: 83.2px;
+  letter-spacing: 2.6px;
+  line-height: 94.7px;
 }
 
 .welcome-img {
@@ -319,8 +348,37 @@ html {
   text-decoration: none;
   color: #ffffff;
 }
-.about-section i {
-  border: #BF2603;
+
+.new-space-and-community-container,
+.blog-and-get-in-touch-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 8%;
+}
+.new-space-and-community-container .new-space,
+.new-space-and-community-container .community,
+.blog-and-get-in-touch-container .new-space,
+.blog-and-get-in-touch-container .community {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.new-space-and-community-container i,
+.blog-and-get-in-touch-container i {
+  color: #ffffff;
+  background-color: #BF2603;
+  padding: 0.5rem;
+  border-radius: 55%;
+  width: 37px;
 }
 
 /*** More-info section ***/
@@ -330,13 +388,36 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 100px 0;
+}
+.more-info p {
+  margin: 0;
+  padding: 1rem 0 2rem 0;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1.9px;
+}
+.more-info .button {
+  background-color: #BF2603;
+  font-family: "Tulpen One", sans-serif;
+  width: 30%;
+  margin: 0;
+  border: none;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  text-align: center;
+  letter-spacing: 0.01rem;
+}
+.more-info .button::after {
+  background-color: #ffffff;
 }
 
-.plan-ahead {
+.plan-ahead-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,22 +425,75 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0 50px;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 50%;
+}
+.plan-ahead-text h4 {
+  margin: 0;
 }
 
+.plan-ahead-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.plan-ahead-img {
+  width: 50%;
+}
 .plan-ahead-img img {
-  width: 35%;
-  -webkit-box-shadow: 1.5rem 1.5rem #FF8327;
-          box-shadow: 1.5rem 1.5rem #FF8327;
   position: relative;
+  top: -8.5rem;
+  -webkit-box-shadow: 1.2rem 1.2rem #FF8327;
+          box-shadow: 1.2rem 1.2rem #FF8327;
 }
 
-h4 {
-  font-family: "Chathura", sans-serif;
-  letter-spacing: 3px;
+.new-locations-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 50px;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 50%;
+}
+.new-locations-text h4 {
+  margin: 0;
 }
 
-.button {
-  color: #ffffff;
+.new-locations-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.new-locations-img {
+  width: 50%;
+}
+.new-locations-img img {
+  position: relative;
+  top: 8rem;
+  /*** Commented out as it was causing issues with styling ***/
+  -webkit-box-shadow: -1.5rem 1.5rem #FF8327;
+          box-shadow: -1.5rem 1.5rem #FF8327;
 }
 
 /*** party section ***/
@@ -372,7 +506,43 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #ffffff;
+}
+.host-party h3 {
+  color: #FF8327;
+}
+
+.host-party-img img {
+  max-width: 100%;
+}
+
+/*** aside styling ***/
+aside {
+  background-color: #220303;
+}
+aside .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8% 5%;
+}
+aside ul li {
+  margin: 1rem;
+}
+
+/*** footer ***/
+footer {
+  background-color: grey;
 }
 
 li {
