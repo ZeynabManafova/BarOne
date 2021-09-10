@@ -879,3 +879,131 @@ li a {
 .nav-menu-text {
   color: #ffffff;
 }
+
+body {
+  margin: 0;
+  background-color: #111010;
+  font-family: "Chathura", sans-serif;
+}
+
+li a {
+  color: #ffffff;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.wrapper {
+  background-image: url(../assets/images/home-image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-nav {
+  font-size: 38px;
+  font-family: "Chathura", sans-serif;
+}
+@media (max-width: 1000px) {
+  .header-nav #burger-icon {
+    color: white;
+    position: fixed;
+    right: 30px;
+    top: 35px;
+  }
+}
+.header-nav .nav-container {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: initial;
+  height: 15%;
+  margin: 0;
+}
+.header-nav .nav-container li a:hover {
+  color: #FF8327;
+}
+.header-nav .nav-container li {
+  margin: 0 30px;
+}
+@media (max-width: 1000px) {
+  .header-nav .nav-container li {
+    display: none;
+  }
+}
+.header-nav .nav-container .main-logo {
+  font-family: "Tulpen One", cursive;
+  color: #ffffff;
+  font-size: 65px;
+  letter-spacing: 2.2px;
+  font-weight: initial;
+  margin: 0 30px;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding-top: 10%;
+}
+
+.welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  text-align: left;
+  z-index: 1;
+}
+.welcome h1 {
+  color: #FF8327;
+  font-family: "Tulpen One", cursive;
+  font-size: 261.4px;
+  font-weight: 400;
+  letter-spacing: 2.4px;
+}
+.welcome span {
+  display: block;
+  color: #ffffff;
+  font-family: "Chathura", sans-serif;
+  font-size: 83.2px;
+  letter-spacing: 2.6px;
+  line-height: 2.7px;
+}
+
+.welcome-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  position: relative;
+  top: 8rem;
+}
+@media (max-width: 1000px) {
+  .welcome-img {
+    margin-top: 85%;
+    width: 100%;
+  }
+}

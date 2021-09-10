@@ -1,0 +1,121 @@
+$primary-color: #FF8327;
+$secondary-color: #BF2603;
+$dark-red: #220303;
+$black-color: #111010;
+$font-color: #ffffff;
+$base-font: "Tulpen One", cursive;
+$secondary-font: 'Chathura', sans-serif;
+
+body{
+    margin: 0;
+    background-color: $black-color;
+    font-family: $secondary-font;
+}
+
+li a {
+    color: $font-color;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.wrapper {
+    background-image: url(../assets/images/home-image-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    // margin-top: -16px;
+    // height: 100vh;
+}
+
+.header-nav {
+
+    #burger-icon{
+        @media (max-width: 1000px) {    
+            color: white;
+            position: fixed;
+            right: 30px;
+            top: 35px;
+        }
+    }
+    
+
+    font-size: 38px;
+    font-family: $secondary-font;
+        .nav-container {
+            color: $font-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: initial;
+            height: 15%;
+            margin: 0;
+
+            li a:hover {
+                color: $primary-color;
+            }
+
+            li{
+                margin: 0 30px;
+
+                @media (max-width: 1000px) {    
+                    display: none;
+                }
+            }
+            
+            .main-logo {
+                font-family: $base-font;
+                color: $font-color;
+                font-size: 65px;
+                letter-spacing: 2.2px;
+                font-weight: initial;
+                margin: 0 30px;
+            }
+    }
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 10%;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: left;
+    z-index: 1;
+
+        h1 {
+            color: $primary-color;
+            font-family: $base-font;
+            font-size: 261.4px;
+            font-weight: 400;
+            letter-spacing: 2.4px;
+        }
+
+        span {
+            display: block;
+            color: $font-color;
+            font-family: $secondary-font;
+            font-size: 83.2px;
+            // font-weight: 700;
+            letter-spacing: 2.6px;
+            line-height: 2.7px;
+        }
+}
+
+.welcome-img {
+    display: flex;
+    justify-content: flex-end; 
+    flex: 1 0 auto;
+    position: relative;
+    top: 8rem;
+
+    @media (max-width: 1000px) {    
+        margin-top: 85%;
+        width: 100%;
+    }
+}
