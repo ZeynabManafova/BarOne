@@ -7,11 +7,11 @@ $base-font: "Tulpen One", cursive;
 $secondary-font: 'Chathura', sans-serif;
 
 
-
 /*** General ***/
 body{
     margin: 0;
     background-color: $black-color;
+    font-family: $secondary-font;
 }
 
 li a {
@@ -32,7 +32,7 @@ li a {
     height: 90vh;
         .blog-nav {
             font-size: 38px;
-            font-family: $secondary-font;
+            // font-family: $secondary-font;
 
             .blog-nav-container {
                 color: $font-color;
@@ -66,7 +66,7 @@ li a {
     display: inline-block;
         h1 a {
             color: $font-color;
-            font-family: $secondary-font;
+            // font-family: $secondary-font;
             font-size: 83.2px;
             font-weight: bold;
             text-align: left;
@@ -76,13 +76,13 @@ li a {
         }
         h1 a:hover {
             color: $primary-color;
-            transition: 2s;
+            transition: 1.5s;
         }
 }
 
 /*** main styling ***/
-
-.side-bar-section {
+/*** left bar section styling  ***/
+.left-bar-section {
     background-color: $black-color;
     display: flex;
     flex-direction: row;
@@ -97,6 +97,8 @@ li a {
     }
 }
 
+/*** artice styling ***/ 
+
 .article-image {
     position: relative;
     img {
@@ -105,3 +107,23 @@ li a {
     }
 }
 
+.nav-menu-container {
+    display: flex;
+    flex-direction: column;
+        
+}
+
+.nav-menu-header {
+    color: $font-color;
+    font-size: 3rem;
+    font-family: $secondary-font ;
+        
+}
+.nav-date {
+    color: $primary-color;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+.nav-menu-text {
+    color: $font-color;
+}

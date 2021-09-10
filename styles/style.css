@@ -636,6 +636,7 @@ footer {
 body {
   margin: 0;
   background-color: #111010;
+  font-family: "Chathura", sans-serif;
 }
 
 li a {
@@ -654,7 +655,6 @@ li a {
 }
 .blog-wrapper .blog-nav {
   font-size: 38px;
-  font-family: "Chathura", sans-serif;
 }
 .blog-wrapper .blog-nav .blog-nav-container {
   color: #ffffff;
@@ -692,7 +692,6 @@ li a {
 }
 .blog-title h1 a {
   color: #ffffff;
-  font-family: "Chathura", sans-serif;
   font-size: 83.2px;
   font-weight: bold;
   text-align: left;
@@ -702,12 +701,13 @@ li a {
 }
 .blog-title h1 a:hover {
   color: #FF8327;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 /*** main styling ***/
-.side-bar-section {
+/*** left bar section styling  ***/
+.left-bar-section {
   background-color: #111010;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -722,6 +722,7 @@ li a {
   position: relative;
 }
 
+/*** artice styling ***/
 .article-image {
   position: relative;
 }
@@ -731,7 +732,28 @@ li a {
           box-shadow: -1.2rem 1.2rem #FF8327;
 }
 
-li {
-  list-style-type: none;
-  text-decoration: none;
+.nav-menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav-menu-header {
+  color: #ffffff;
+  font-size: 3rem;
+  font-family: "Chathura", sans-serif;
+}
+
+.nav-date {
+  color: #FF8327;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.nav-menu-text {
+  color: #ffffff;
 }
