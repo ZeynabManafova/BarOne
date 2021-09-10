@@ -14,17 +14,23 @@ body{
 h4 {
     font-family: $secondary-font;
     letter-spacing: 3px;
+    margin: 0;
+    font-size: 4rem;
 }
 
 .button {
     color: $font-color;
 }
 
-li a {
+
+li {
     color: $font-color;
     text-decoration: none;
     list-style: none;
+}
 
+a {
+    text-decoration: none;
 }
 
 p {
@@ -114,6 +120,11 @@ p {
     flex: 1 0 auto;
     position: relative;
     top: 8rem;
+
+    @media (max-width: 1000px) {    
+        margin-top: 85%;
+        width: 100%;
+    }
 }
 
 /*** about section styling starts ***/
@@ -122,19 +133,25 @@ p {
     color: $font-color;
     padding: 6% 5% 5% 5%;
         a {
+            color: $font-color;
+            font-size: 4rem;
             font-family: $secondary-font;
             text-decoration: none;
-            color: $font-color;
-            transition: color 0.2s ease;
+            transition: color 0.2s;
         }
-        // &:hover {
-        //     color: $secondary-color;
-        // }
+        a:hover {
+            color: $secondary-color;
+        }
 
         p{
             font-size: 2rem;
         }
+
+        @media (max-width: 1000px) {    
+            margin: 15%;
+        }
 }
+
 
 .blog-and-get-in-touch-container, .new-space-and-community-container{
 
@@ -143,6 +160,7 @@ p {
         h3{
             font-family: $secondary-font;
             font-weight: lighter;
+            margin: 0;
         }
 
         .community-text{
@@ -158,6 +176,11 @@ p {
     flex-direction: row;
     margin: 5%;
         
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+    }
+
     .new-space, 
     .community {
         display: flex;
@@ -174,7 +197,7 @@ p {
 }
 
 .icon-space{
-    margin: 15px;
+    margin: 20px;
 }
 
 /*** More-info section ***/
@@ -188,7 +211,7 @@ p {
         p {
             margin: 0;
             padding: 1rem 0 2rem 0;
-            font-size: 20px;
+            font-size: 1.97rem;
             line-height: 30px;
             letter-spacing: 1.9px;
         }
@@ -204,15 +227,21 @@ p {
             line-height: 3.2rem;
             text-align: center;
             letter-spacing: 0.01rem;
+            &:hover{
+                background-color: $primary-color ;
+                color: $font-color;
+            }
 
-            &::after {
-                background-color: $font-color;
+            @media (max-width: 1000px) {
+                width: 100%;
             }
         }
 }
 
-// Plan Ahead
-.plan-ahead-text {
+
+// Plan Ahead and New locations
+.plan-ahead-text,
+.new-locations-text  {
     display: flex;
     flex-direction: column;
     padding: 0 50px;
@@ -220,15 +249,15 @@ p {
     line-height: 3.2rem;
     align-self: center;
     width: 50%;
-            h4 {
-                margin: 0;
-            }
 }
 
 // added flex to the container 
 .plan-ahead-container{
     display: flex;
     flex-direction: row;
+    @media (max-width: 1000px) {
+        flex-direction: column-reverse;
+    }
 }
 
 .plan-ahead-img {
@@ -241,25 +270,15 @@ p {
     }
 }
 
-// New Locations
-.new-locations-text {
-    display: flex;
-    flex-direction: column;
-    padding: 0 50px;
-    font-size: 2rem;
-    line-height: 3.2rem;
-    align-self: center;
-    width: 50%;
-
-    h4 {
-        margin: 0;
-    }
-} 
 
 // added flex to the container 
 .new-locations-container{
     display: flex;
     flex-direction: row-reverse;
+
+    @media (max-width: 1000px) {
+        flex-direction: column-reverse;
+    }
 }
 
 .new-locations-img {
@@ -267,7 +286,8 @@ p {
 
     img {
         position: relative;
-        top: 8rem;            /*** Commented out as it was causing issues with styling ***/
+        top: 8rem; 
+        left: 3rem;
         box-shadow: -1.5rem 1.5rem $primary-color;
     }
 }
@@ -282,13 +302,22 @@ p {
     flex-direction: column;
     align-items: center;
     color: $font-color;
+    margin: 2% 10%;    
+    h3 {
+        color: $primary-color;
+        font-size: 68px;
+        font-weight: bold;
+        letter-spacing: 2.2px;
+        line-height: 58px;
+        margin-bottom: 0;
+        }
 
-        h3 {
-            color: $primary-color;
-            font-size: 68px;
-            font-weight: bold;
-            letter-spacing: 2.2px;
-            line-height: 58px;
+        p{
+            font-size: 1.9rem;
+        }
+
+        a{
+            margin-bottom: 5%;
         }
 }
 
@@ -296,10 +325,15 @@ p {
     display: inline-block;
     text-decoration: none;
     font-family: "Tulpen One", cursive;
+    font-size: 30px;
     text-align: center;
     color: #ffffff;
     background: #bf2603;
     padding: 0.8rem 2.1rem;
+    &:hover{
+        background-color: $primary-color ;
+        color: $font-color;
+    }
 }
 
 .host-party-img img {
@@ -312,14 +346,24 @@ p {
     background-color: $black-color;
     display: flex;
     flex-direction: row;
-        events-text {
-            width: 65%;
-        }
-        p {
-            color: $font-color;
-        }
-        h3 {
-            color: $primary-color;
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .events-text {
+        width: 65%;
+        
+            h3 {
+                color: $primary-color;
+                font-size: 4rem;
+            }
+
+            p {
+                color: $font-color;
+                font-size: 1.97rem;
+            }
         }
 }
 
@@ -344,15 +388,34 @@ aside {
         flex-direction: row;
         align-items: center;
         padding: 8% 5%;
+
+
+        @media (max-width: 1000px) {
+            flex-direction: column;
+        }
     }
 
     ul li {
         margin: 1rem;
+
+
+        @media (max-width: 1000px) {
+            // width: 10%;
+        }
     }
 }
 
 
 /*** footer ***/
 footer {
-    background-color: grey;
-}
+    font-size: 1.95rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    letter-spacing: 0.095rem;
+    margin: 0;
+
+        p {
+            text-align: center;
+            color: $font-color;
+        }
+}   
