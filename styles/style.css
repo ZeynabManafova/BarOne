@@ -277,6 +277,14 @@ p {
   font-size: 38px;
   font-family: "Chathura", sans-serif;
 }
+@media (max-width: 1000px) {
+  .header-nav #burger-icon {
+    color: white;
+    position: fixed;
+    right: 30px;
+    top: 35px;
+  }
+}
 .header-nav .nav-container {
   color: #ffffff;
   display: -webkit-box;
@@ -297,6 +305,11 @@ p {
 }
 .header-nav .nav-container li {
   margin: 0 30px;
+}
+@media (max-width: 1000px) {
+  .header-nav .nav-container li {
+    display: none;
+  }
 }
 .header-nav .nav-container .main-logo {
   font-family: "Tulpen One", cursive;
