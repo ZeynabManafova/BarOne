@@ -6,6 +6,9 @@ $font-color: #ffffff;
 $base-font: "Tulpen One", cursive;
 $secondary-font: 'Chathura', sans-serif;
 
+// haven't finished yet. didn't have enough time, still working on it. 
+
+
 body{
     margin: 0;
     background-color: $black-color;
@@ -31,7 +34,7 @@ li a {
 
     #burger-icon{
         @media (max-width: 1000px) {    
-            color: white;
+            color: $font-color;
             position: fixed;
             right: 30px;
             top: 35px;
@@ -110,7 +113,7 @@ li a {
 .contact-section{
     display: flex;
     flex-direction: row;
-    color: white;
+    color: $font-color;
 }
 
 .information-section{
@@ -119,7 +122,7 @@ li a {
 
         .social-medias ul{
             flex-direction: row;
-            color: white;
+            color: $font-color;
             justify-content: space-between;
         }
 
