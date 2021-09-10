@@ -249,6 +249,12 @@ h4 {
   color: #ffffff;
 }
 
+li a {
+  color: #ffffff;
+  text-decoration: none;
+  list-style: none;
+}
+
 p {
   font-family: "Chathura", sans-serif;
 }
@@ -262,7 +268,7 @@ p {
 }
 
 .header-nav {
-  font-size: 15px;
+  font-size: 38px;
   font-family: "Chathura", sans-serif;
 }
 .header-nav .nav-container {
@@ -270,9 +276,9 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -280,12 +286,19 @@ p {
   height: 15%;
   margin: 0;
 }
+.header-nav .nav-container li a:hover {
+  color: #FF8327;
+}
+.header-nav .nav-container li {
+  margin: 0 30px;
+}
 .header-nav .nav-container .main-logo {
-  font-family: "Tulpen One", sans-serif;
+  font-family: "Tulpen One", cursive;
   color: #ffffff;
-  font-size: 45px;
+  font-size: 65px;
   letter-spacing: 2.2px;
   font-weight: initial;
+  margin: 0 30px;
 }
 
 .title {
@@ -303,13 +316,20 @@ p {
 }
 
 .welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
   text-align: left;
   z-index: 1;
 }
 .welcome h1 {
   color: #FF8327;
-  font-family: "Tulpen One", sans-serif;
+  font-family: "Tulpen One", cursive;
   font-size: 261.4px;
   font-weight: 400;
   letter-spacing: 2.4px;
@@ -317,11 +337,10 @@ p {
 .welcome span {
   display: block;
   color: #ffffff;
-  padding: 3rem 0.4rem;
   font-family: "Chathura", sans-serif;
   font-size: 83.2px;
   letter-spacing: 2.6px;
-  line-height: 94.7px;
+  line-height: 2.7px;
 }
 
 .welcome-img {
@@ -345,8 +364,23 @@ p {
   padding: 6% 5% 5% 5%;
 }
 .about-section a {
+  font-family: "Chathura", sans-serif;
   text-decoration: none;
   color: #ffffff;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+.about-section p {
+  font-size: 2rem;
+}
+
+.blog-and-get-in-touch-container .community h3, .new-space-and-community-container .community h3 {
+  font-family: "Chathura", sans-serif;
+  font-weight: lighter;
+}
+.blog-and-get-in-touch-container .community .community-text, .new-space-and-community-container .community .community-text {
+  margin-right: 80px;
+  font-weight: lighter;
 }
 
 .new-space-and-community-container,
@@ -358,7 +392,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 8%;
+  margin: 5%;
 }
 .new-space-and-community-container .new-space,
 .new-space-and-community-container .community,
@@ -407,7 +441,7 @@ p {
 }
 .more-info .button {
   background-color: #BF2603;
-  font-family: "Tulpen One", sans-serif;
+  font-family: "Tulpen One", cursive;
   width: 30%;
   margin: 0;
   border: none;
@@ -501,6 +535,10 @@ p {
 }
 
 /*** party section ***/
+.party-section {
+  text-align: center;
+}
+
 .host-party {
   background-color: #111010;
   display: -webkit-box;
@@ -517,10 +555,55 @@ p {
 }
 .host-party h3 {
   color: #FF8327;
+  font-size: 68px;
+  font-weight: bold;
+  letter-spacing: 2.2px;
+  line-height: 58px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Tulpen One", cursive;
+  text-align: center;
+  color: #ffffff;
+  background: #bf2603;
+  padding: 0.8rem 2.1rem;
 }
 
 .host-party-img img {
   max-width: 100%;
+}
+
+/*** events styling starts here ***/
+.events-wrapper {
+  background-color: #111010;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.events-wrapper events-text {
+  width: 65%;
+}
+.events-wrapper p {
+  color: #ffffff;
+}
+.events-wrapper h3 {
+  color: #FF8327;
+}
+
+.events-img {
+  width: 300px;
+  height: auto;
+  margin: 11%;
+}
+.events-img img {
+  -webkit-box-shadow: -1.2rem 1.2rem #FF8327;
+          box-shadow: -1.2rem 1.2rem #FF8327;
 }
 
 /*** aside styling ***/
@@ -547,6 +630,105 @@ aside ul li {
 /*** footer ***/
 footer {
   background-color: grey;
+}
+
+/*** General ***/
+body {
+  margin: 0;
+  background-color: #111010;
+}
+
+li a {
+  color: #ffffff;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/*** header styling ***/
+.blog-wrapper {
+  background-image: url(../assets/images/blog-header-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 90vh;
+}
+.blog-wrapper .blog-nav {
+  font-size: 38px;
+  font-family: "Chathura", sans-serif;
+}
+.blog-wrapper .blog-nav .blog-nav-container {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: initial;
+  height: 15%;
+  margin: 0;
+}
+.blog-wrapper .blog-nav li {
+  margin: 0 30px;
+}
+.blog-wrapper .blog-nav li a:hover {
+  color: #FF8327;
+}
+.blog-wrapper .blog-nav .blog-main-logo {
+  font-family: "Tulpen One", cursive;
+  color: #ffffff;
+  font-size: 65px;
+  letter-spacing: 2.2px;
+  font-weight: initial;
+  margin: 0 30px;
+}
+
+.blog-title {
+  margin: 10% 5%;
+  display: inline-block;
+}
+.blog-title h1 a {
+  color: #ffffff;
+  font-family: "Chathura", sans-serif;
+  font-size: 83.2px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 94.7px;
+  letter-spacing: 2.6px;
+  text-decoration: none;
+}
+.blog-title h1 a:hover {
+  color: #FF8327;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+/*** main styling ***/
+.side-bar-section {
+  background-color: #111010;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.our-mission-img img {
+  position: relative;
+}
+
+.article-image {
+  position: relative;
+}
+.article-image img {
+  width: 100%;
+  -webkit-box-shadow: -1.2rem 1.2rem #FF8327;
+          box-shadow: -1.2rem 1.2rem #FF8327;
 }
 
 li {

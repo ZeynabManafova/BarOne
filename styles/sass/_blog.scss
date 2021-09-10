@@ -1,0 +1,107 @@
+$primary-color: #FF8327;
+$secondary-color: #BF2603;
+$dark-red: #220303;
+$black-color: #111010;
+$font-color: #ffffff;
+$base-font: "Tulpen One", cursive;
+$secondary-font: 'Chathura', sans-serif;
+
+
+
+/*** General ***/
+body{
+    margin: 0;
+    background-color: $black-color;
+}
+
+li a {
+    color: $font-color;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+
+/*** header styling ***/
+
+.blog-wrapper {
+    background-image: url(../assets/images/blog-header-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 90vh;
+        .blog-nav {
+            font-size: 38px;
+            font-family: $secondary-font;
+
+            .blog-nav-container {
+                color: $font-color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: initial;
+                height: 15%;
+                margin: 0
+            }
+            li {
+                margin: 0 30px;
+            }
+
+            li a:hover {
+                color: $primary-color;
+            }
+                .blog-main-logo {
+                    font-family: $base-font;
+                    color: $font-color;
+                    font-size: 65px;
+                    letter-spacing: 2.2px;
+                    font-weight: initial;
+                    margin: 0 30px;
+                }
+        }
+}
+
+.blog-title {
+    margin: 10% 5%;
+    display: inline-block;
+        h1 a {
+            color: $font-color;
+            font-family: $secondary-font;
+            font-size: 83.2px;
+            font-weight: bold;
+            text-align: left;
+            line-height: 94.7px;
+            letter-spacing: 2.6px;
+            text-decoration: none;
+        }
+        h1 a:hover {
+            color: $primary-color;
+            transition: 2s;
+        }
+}
+
+/*** main styling ***/
+
+.side-bar-section {
+    background-color: $black-color;
+    display: flex;
+    flex-direction: row;
+}
+
+.our-mission-img {
+    img {
+        // width: 137%;
+        position: relative;
+        // top: 1.5rem;
+        // left: 1.5rem;
+    }
+}
+
+.article-image {
+    position: relative;
+    img {
+        width: 100%;
+        box-shadow: -1.2rem 1.2rem $primary-color;
+    }
+}
+
