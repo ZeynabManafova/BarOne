@@ -107,15 +107,23 @@ li a {
         }
 }
 
-.welcome-img {
+.contact-section{
     display: flex;
-    justify-content: flex-end; 
-    flex: 1 0 auto;
-    position: relative;
-    top: 8rem;
+    flex-direction: row;
+    color: white;
+}
 
-    @media (max-width: 1000px) {    
-        margin-top: 85%;
-        width: 100%;
-    }
+.information-section{
+    display: flex;
+    flex-direction: column;
+
+        .social-medias ul{
+            flex-direction: row;
+            color: white;
+            justify-content: space-between;
+        }
+
+            li a i{
+                font-size: 1.5rem;
+            }
 }
