@@ -9,6 +9,8 @@ const burger = document.querySelector('.burger-container')
 // const linkContact = document.querySelector('#link-contact');
 
 
+// like the current style but will make different while working on it.
+
 burger.addEventListener('click', toggleMobileMenu)
 
 function toggleMobileMenu() {

@@ -313,6 +313,12 @@ p {
     padding-top: 4rem;
     margin: 10px 0;
   }
+  .header-nav a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: -0.1em;
+    color: #FF8327;
+    margin: 1rem;
+  }
   .header-nav .show-nav {
     -webkit-transform: translateY(0);
             transform: translateY(0);

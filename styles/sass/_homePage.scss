@@ -49,7 +49,6 @@ p {
 
 .header-nav {
 
-
     @media (max-width: 1000px) {           
 
         .burger-container{
@@ -85,14 +84,23 @@ p {
             padding-top: 4rem;
             margin: 10px 0;
         }
-
+        a:hover {
+            text-decoration: underline;
+            text-decoration-thickness: -0.1em;
+            color: $primary-color;
+            margin: 1rem;
+        }
+        // currently don't like the style need to come back later. 
         .show-nav {
             transform: translateY(0);
         }
 
-    }
+        // x icon will make later. 
+        // .x-icon {
+        //     display: none;
+        // }
 
-    
+    }
 
     font-size: 38px;
     font-family: $secondary-font;
