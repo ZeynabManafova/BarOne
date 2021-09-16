@@ -49,14 +49,49 @@ p {
 
 .header-nav {
 
-    #burger-icon{
-        @media (max-width: 1000px) {    
+
+    @media (max-width: 1000px) {           
+
+        .burger-container{
+
             color: white;
             position: fixed;
-            right: 30px;
-            top: 35px;
+            right: 2rem;
+            top: 2rem;
+            z-index: 200;
+    
+            .bar-1, .bar-2, .bar-3 {
+                width: 30px;
+                height: 5px;
+                background-color: white;
+                margin: 6px 0;
+                transition: 0.4s;
+            }
         }
+            
+        .mobile-menu{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 100;
+            transform: translateY(-100%);
+            transition: transform 0.2s;
+            list-style: none;
+            padding-top: 4rem;
+            margin: 10px 0;
+        }
+
+        .show-nav {
+            transform: translateY(0);
+        }
+
     }
+
     
 
     font-size: 38px;
